@@ -30,8 +30,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: process.env.DEPLOY_URL
+          ? "https://evening-reaches-18582.herokuapp.com"
+          : "http://localhost:1337",
+        queryLimit: 1000, // Default to 100
+        contentTypes: [`user`],
+        //If using single types place them in this array.
+        singleTypes: [`hero-section`],
+      },
+    },
 
     // {
     //   resolve: `gatsby-source-instagram-all`,
