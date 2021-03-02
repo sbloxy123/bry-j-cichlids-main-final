@@ -11,34 +11,6 @@ module.exports = {
     siteUrl: `https://www.bryanjohnstoncichlids.co.uk`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: process.env.DEPLOY_URL
-          ? "https://evening-reaches-18582.herokuapp.com"
-          : "http://localhost:1337",
-        queryLimit: 1000, // Default to 100
-        contentTypes: [
-          // `care-guides`,
-          // `flowerhorn-type`,
-          // `flowerhorns-for-sale`,
-          `user`,
-        ],
-        //If using single types place them in this array.
-        singleTypes: [
-          // `deliveries`,
-          // `footer-content`,
-          // `imports-information-page`,
-          // `gallery-links-homepage`,
-          `hero-section`,
-          // `imports-and-care-guide-homepage`,
-          // `care-guide-page`,
-          // `previously-sold-fish-gallery`,
-          // `shop-page`,
-          // `flowerhorns-for-sale-page`,
-        ],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
@@ -67,15 +39,6 @@ module.exports = {
     //     access_token: process.env.INSTAGRAM_TOKEN,
     //   },
     // },
-    {
-      resolve: "@bakkenbaeck/gatsby-plugin-rename-routes",
-      options: {
-        rename: {
-          "/gallery/instagram/": "/gallery/sold-flowerhorns",
-          "/gallery/forSale/": "gallery/for-sale",
-        },
-      },
-    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
