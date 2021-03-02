@@ -1,7 +1,7 @@
 import React from "react";
 import BackgroundImage from "gatsby-background-image";
 import { graphql, useStaticQuery } from "gatsby";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import "../css/hero.css";
 
 const getImageAndText = graphql`
@@ -35,16 +35,16 @@ const Hero = () => {
             <h2 className="subheading">{data.strapiHeroSection.subheading}</h2>
           </div>
           <div className="action-buttons">
-            <Link to="/gallery/">
+            {/* <Link to="/gallery/">
               <button type="button" className="btn btn-danger">
                 Galleries
               </button>
-            </Link>
-            <Link to="/careGuide/">
+            </Link> */}
+            {/* <Link to="/careGuide/">
               <button type="button" className="btn btn-outline-secondary">
                 Care Guide
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

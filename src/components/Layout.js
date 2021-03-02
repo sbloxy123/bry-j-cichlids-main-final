@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import favicon from "../images/favicon.ico";
 import Helmet from "react-helmet";
 
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <Navbar />
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -19,23 +19,23 @@ module.exports = {
           : "http://localhost:1337",
         queryLimit: 1000, // Default to 100
         contentTypes: [
-          `care-guides`,
-          `flowerhorn-type`,
-          `flowerhorns-for-sale`,
+          // `care-guides`,
+          // `flowerhorn-type`,
+          // `flowerhorns-for-sale`,
           `user`,
         ],
         //If using single types place them in this array.
         singleTypes: [
-          `deliveries`,
-          `footer-content`,
-          `imports-information-page`,
-          `gallery-links-homepage`,
+          // `deliveries`,
+          // `footer-content`,
+          // `imports-information-page`,
+          // `gallery-links-homepage`,
           `hero-section`,
-          `imports-and-care-guide-homepage`,
-          `care-guide-page`,
-          `previously-sold-fish-gallery`,
-          `shop-page`,
-          `flowerhorns-for-sale-page`,
+          // `imports-and-care-guide-homepage`,
+          // `care-guide-page`,
+          // `previously-sold-fish-gallery`,
+          // `shop-page`,
+          // `flowerhorns-for-sale-page`,
         ],
       },
     },
@@ -61,12 +61,12 @@ module.exports = {
 
     `gatsby-plugin-sitemap`,
 
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: process.env.INSTAGRAM_TOKEN,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram-all`,
+    //   options: {
+    //     access_token: process.env.INSTAGRAM_TOKEN,
+    //   },
+    // },
     {
       resolve: "@bakkenbaeck/gatsby-plugin-rename-routes",
       options: {
