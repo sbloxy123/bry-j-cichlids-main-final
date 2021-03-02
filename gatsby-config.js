@@ -61,12 +61,12 @@ module.exports = {
 
     `gatsby-plugin-sitemap`,
 
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: process.env.INSTAGRAM_TOKEN,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram-all`,
+    //   options: {
+    //     access_token: process.env.INSTAGRAM_TOKEN,
+    //   },
+    // },
     {
       resolve: "@bakkenbaeck/gatsby-plugin-rename-routes",
       options: {
