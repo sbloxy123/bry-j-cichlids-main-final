@@ -67,15 +67,15 @@ module.exports = {
     //     access_token: process.env.INSTAGRAM_TOKEN,
     //   },
     // },
-    {
-      resolve: "@bakkenbaeck/gatsby-plugin-rename-routes",
-      options: {
-        rename: {
-          "/gallery/instagram/": "/gallery/sold-flowerhorns",
-          "/gallery/forSale/": "gallery/for-sale",
-        },
-      },
-    },
+    // {
+    //   resolve: "@bakkenbaeck/gatsby-plugin-rename-routes",
+    //   options: {
+    //     rename: {
+    //       "/gallery/instagram/": "/gallery/sold-flowerhorns",
+    //       "/gallery/forSale/": "gallery/for-sale",
+    //     },
+    //   },
+    // },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
