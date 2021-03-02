@@ -32,7 +32,7 @@ const instagram = ({ data }) => {
             <FontAwesomeIcon icon={faInstagram} size="4x" />
           </a>
         </div>
-        {/* <div className="gallery-collection">
+        <div className="gallery-collection">
           {data.allInstagramContent.edges.map((thumb) => (
             <div className="insta" key={thumb.id}>
               <Zoom>
@@ -44,7 +44,7 @@ const instagram = ({ data }) => {
               </Zoom>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     </Layout>
   );
@@ -54,23 +54,22 @@ export default instagram;
 
 export const query = graphql`
   {
+    allInstagramContent {
+      edges {
+        node {
+          localImage {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
     strapiPreviouslySoldFishGallery {
       gallery_page_title
       gallery_subtitle
     }
   }
 `;
-
-// allInstagramContent {
-//   edges {
-//     node {
-//       localImage {
-//         childImageSharp {
-//           fluid {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

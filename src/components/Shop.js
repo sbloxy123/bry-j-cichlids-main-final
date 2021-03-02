@@ -16,6 +16,7 @@ const shopText = graphql`
 
 const Shop = () => {
   const data = useStaticQuery(shopText);
+  console.log(data);
   return (
     <div className="shop-hero">
       <div className="shop-text">
