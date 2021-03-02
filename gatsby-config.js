@@ -18,12 +18,7 @@ module.exports = {
           ? "https://evening-reaches-18582.herokuapp.com"
           : "http://localhost:1337",
         queryLimit: 1000, // Default to 100
-        contentTypes: [
-          `care-guides`,
-          `flowerhorn-type`,
-          `flowerhorns-for-sale`,
-          `user`,
-        ],
+        contentTypes: [`care-guides`, `flowerhorn-type`, `user`],
         //If using single types place them in this array.
         singleTypes: [
           `deliveries`,
@@ -35,7 +30,6 @@ module.exports = {
           `care-guide-page`,
           `previously-sold-fish-gallery`,
           `shop-page`,
-          `flowerhorns-for-sale-page`,
         ],
       },
     },
